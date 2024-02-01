@@ -1,0 +1,31 @@
+/* Estilos para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilos para los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+input, button, select {
+    margin-bottom: 5px;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Otros estilos */
+h2 {
+    margin-top: 20px;
+}

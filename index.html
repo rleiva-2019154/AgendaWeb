@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Login -->
+    <div id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+    </div>
+
+    <!-- Contactos -->
+    <div id="contactos" class="hidden">
+        <h2>Contactos</h2>
+        <ul id="contactList">
+            <!-- Lista de contactos estática -->
+            <li>Nombre 1</li>
+            <li>Nombre 2</li>
+            <li>Nombre 3</li>
+            <li>Nombre 4</li>
+            <li>Nombre 5</li>
+        </ul>
+        <button id="addContactBtn">Agregar contacto</button>
+    </div>
+
+    <!-- Nuevo contacto -->
+    <div id="nuevoContacto" class="hidden">
+        <h2>Nuevo Contacto</h2>
+        <form id="contactForm">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="tel" id="telefono" placeholder="Teléfono" required>
+            <button type="submit">Guardar contacto</button>
+        </form>
+    </div>
+
+    <!-- Detalles del contacto -->
+    <div id="detallesContacto" class="hidden">
+        <h2>Detalles del Contacto</h2>
+        <ul id="contactDetails"></ul>
+    </div>
+
+    <!-- Favoritos -->
+    <div id="favoritos" class="hidden">
+        <h2>Favoritos</h2>
+        <ul id="favList">
+            <!-- Lista de favoritos estática -->
+            <li>Nombre 1</li>
+            <li>Nombre 2</li>
+        </ul>
+    </div>
+
+    <!-- Perfil del usuario -->
+    <div id="perfilUsuario" class="hidden">
+        <h2>Perfil del Usuario</h2>
+        <!-- Mostrar datos del usuario -->
+    </div>
+
+    <!-- ToDo list -->
+    <div id="todoList" class="hidden">
+        <h2>ToDo List</h2>
+        <ul id="todoItems">
+            <!-- Lista de pendientes generada dinámicamente con JavaScript -->
+        </ul>
+        <form id="todoForm">
+            <input type="text" id="todoText" placeholder="Agregar nueva tarea" required>
+            <select id="priority">
+                <option value="alta">Alta</option>
+                <option value="media">Media</option>
+                <option value="baja">Baja</option>
+            </select>
+            <button type="submit">Agregar tarea</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
