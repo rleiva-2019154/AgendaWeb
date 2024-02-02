@@ -10,7 +10,7 @@
 
 <body>
     <!-- Login -->
-    <div id="login">
+    <div id="login" class="container">
         <h2>Login</h2>
         <form id="loginForm">
             <input type="email" id="email" placeholder="Correo electrónico" required>
@@ -20,37 +20,38 @@
     </div>
 
     <!-- Contactos -->
-    <div id="contactos" class="hidden">
+    <div id="contactos" class="hidden container">
         <h2>Contactos</h2>
         <ul id="contactList">
             <!-- Lista de contactos estática -->
-            <li>Nombre 1</li>
-            <li>Nombre 2</li>
-            <li>Nombre 3</li>
-            <li>Nombre 4</li>
-            <li>Nombre 5</li>
+            <li>Rudgar Leiva : 43579401</li>
+            <li>Eva Rocio : 35653118</li>
+            <li>Allan Garcia : 23568978</li>
+            <li>Nombre 4 : 87542198</li>
+            <li>Nombre 5 : 32567854</li>
         </ul>
         <button id="addContactBtn">Agregar contacto</button>
+        <button id="favPage">Favoritos</button>
     </div>
 
     <!-- Nuevo contacto -->
-    <div id="nuevoContacto" class="hidden">
+    <div id="nuevoContacto" class="hidden container">
         <h2>Nuevo Contacto</h2>
         <form id="contactForm">
             <input type="text" id="nombre" placeholder="Nombre" required>
             <input type="tel" id="telefono" placeholder="Teléfono" required>
             <button type="submit">Guardar contacto</button>
-        </form>
+        </form> 
     </div>
 
     <!-- Detalles del contacto -->
-    <div id="detallesContacto" class="hidden">
+    <div id="detallesContacto" class="hidden container">
         <h2>Detalles del Contacto</h2>
         <ul id="contactDetails"></ul>
     </div>
 
     <!-- Favoritos -->
-    <div id="favoritos" class="hidden">
+    <div id="favoritos" class="hidden container">
         <h2>Favoritos</h2>
         <ul id="favList">
             <!-- Lista de favoritos estática -->
