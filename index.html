@@ -10,7 +10,7 @@
 
 <body>
     <!-- Login -->
-    <div id="login" class="container">
+    <div id="loginPage" class="page container">
         <h2>Login</h2>
         <form id="loginForm">
             <input type="email" id="email" placeholder="Correo electrónico" required>
@@ -20,54 +20,68 @@
     </div>
 
     <!-- Contactos -->
-    <div id="contactos" class="hidden container">
+    <div id="contactosPage" class="page hidden container">
         <h2>Contactos</h2>
         <ul id="contactList">
             <!-- Lista de contactos estática -->
-            <li>Rudgar Leiva : 43579401</li>
-            <li>Eva Rocio : 35653118</li>
-            <li>Allan Garcia : 23568978</li>
-            <li>Nombre 4 : 87542198</li>
-            <li>Nombre 5 : 32567854</li>
+            <li>Rudgar Leiva : 43579401 <button class="detailsBtn">Detalles</button> <button class="favBtn">Favorito</button></li>
+            <li>Eva Rocio : 35653118 <button class="detailsBtn">Detalles</button> <button class="favBtn">Favorito</button></li>
+            <li>Allan Garcia : 23568978 <button class="detailsBtn">Detalles</button> <button class="favBtn">Favorito</button></li>
+            <li>Pedro Toledo : 87542198 <button class="detailsBtn">Detalles</button> <button class="favBtn">Favorito</button></li>
+            <li>Jorge Portillo : 32567854 <button class="detailsBtn">Detalles</button> <button class="favBtn">Favorito</button></li>
         </ul>
         <button id="addContactBtn">Agregar contacto</button>
-        <button id="favPage">Favoritos</button>
+        <button id="favPageBtn">Favoritos</button>
+        <button id="perfilUsuarioBtn">Perfil del usuario</button>
     </div>
 
     <!-- Nuevo contacto -->
-    <div id="nuevoContacto" class="hidden container">
+    <div id="nuevoContactoPage" class="page hidden container">
         <h2>Nuevo Contacto</h2>
         <form id="contactForm">
             <input type="text" id="nombre" placeholder="Nombre" required>
             <input type="tel" id="telefono" placeholder="Teléfono" required>
             <button type="submit">Guardar contacto</button>
-        </form> 
+        </form>
+        <button id="backToContactosBtn">Regresar</button>
     </div>
 
     <!-- Detalles del contacto -->
-    <div id="detallesContacto" class="hidden container">
+    <div id="detallesContactoPage" class="page hidden container">
         <h2>Detalles del Contacto</h2>
         <ul id="contactDetails"></ul>
+        <button id="backToContactosBtn">Regresar</button>
     </div>
 
     <!-- Favoritos -->
-    <div id="favoritos" class="hidden container">
+    <div id="favoritosPage" class="page hidden container">
         <h2>Favoritos</h2>
         <ul id="favList">
-            <!-- Lista de favoritos estática -->
-            <li>Nombre 1</li>
-            <li>Nombre 2</li>
+            <!-- Lista de favoritos con dos usuarios -->
+            <li>Rudgar Leiva</li>
+            <li>Eva Rocio</li>
         </ul>
+        <button id="goToTodoListBtn">Ir al ToDo List</button>
+        <button id="backToContactosBtn">Regresar</button>
     </div>
 
     <!-- Perfil del usuario -->
-    <div id="perfilUsuario" class="hidden">
+    <div id="perfilUsuarioPage" class="page hidden container">
         <h2>Perfil del Usuario</h2>
         <!-- Mostrar datos del usuario -->
+        <div id="userData">
+            <p><strong>Nombre: Rudgar Oliverio Lenin</strong> <span id="userName"></span></p>
+            <p><strong>Apellido: Leiva Suazo</strong> <span id="userLastName"></span></p>
+            <p><strong>Correo: rleiva-2019154@kinal.edu.gt</strong> <span id="userLastName"></span></p>
+            <p><strong>Dirección: zona 3</strong> <span id="userAddress"></span></p>
+            <p><strong>Teléfono: 12548789</strong> <span id="userPhone"></span></p>
+        </div>
+        <button id="backToContactosBtn">Regresar</button>
     </div>
 
+
     <!-- ToDo list -->
-    <div id="todoList" class="hidden">
+    <div id="todoListPage" class="page hidden container">
         <h2>ToDo List</h2>
         <ul id="todoItems">
             <!-- Lista de pendientes generada dinámicamente con JavaScript -->
@@ -81,6 +95,7 @@
             </select>
             <button type="submit">Agregar tarea</button>
         </form>
+        <button id="backToContactosBtn">Regresar</button>
     </div>
 
     <script src="script.js"></script>
